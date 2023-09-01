@@ -21,7 +21,8 @@ def hello_world():  # put application's code here
 @router_bp.route("/health")
 @cross_origin()
 def healthcheck():  # put application's code here
-    return jsonify("200 OK")
+    response = make_response("200 OK", 200)
+    return response
 
 
 @router_bp.route("/patients")
