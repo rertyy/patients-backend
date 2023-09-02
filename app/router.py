@@ -48,7 +48,7 @@ def get_patients_by_id(patient_id: int):
     return make_response(string_to_json("Patient not found"), 404)
 
 
-@router_bp.route("/patients/<int:patient_id>/notes", methods=["POST"])
+@router_bp.route("/patients/<int:patient_id>/notes", methods=["POST", "OPTIONS"])
 @cross_origin()
 def update_patient_notes(patient_id: int):
     text = request.json.get("patientNotes")
