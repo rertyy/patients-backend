@@ -1,7 +1,9 @@
 Frontend repo at https://github.com/rertyy/patients-frontend <br>
 Backend repo at https://github.com/rertyy/patients-backend
 
-Hosted on https://patients-api-gik9.onrender.com
+Hosted on https://patients-api-gik9.onrender.com.
+
+Note: Render apps may spin down due to inactivity and cause the server to go down
 
 Testing instructions:
 1. Download or clone this repository `git clone https://github.com/rertyy/patients-backend.git`
