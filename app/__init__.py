@@ -8,6 +8,6 @@ from .db import connect
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(router_bp)
-    CORS(app)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     return app
