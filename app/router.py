@@ -1,7 +1,7 @@
 from flask import jsonify, json, request
 
 from flask import Blueprint, make_response
-from .db import collection, reset_data
+from .db import collection
 from flask_cors import cross_origin
 from .util import parse_json, string_to_json
 from .data import patients_data
